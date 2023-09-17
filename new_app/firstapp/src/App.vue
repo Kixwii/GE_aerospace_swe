@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h1>Compute Product</h1>
-    <img src="GE aerospace stock image.jpeg" alt="Image" width="200">
+    <h1>{{ title }}</h1>
+    <img src="./assets/GE aerospace stock image.jpeg" alt="Image" width="200">
     <div>
       <label for="number1">Number 1:</label>
       <input type="number" id="number1" v-model="number1">
@@ -13,7 +13,6 @@
     <button v-if= "!showProduct" @click="computeProduct">Compute</button>
     <p v-if="showProduct">Product: {{ product }}</p>
   </div>
-  <img alt="Vue logo" src="./assets/GE aerospace stock image.jpeg">
 </template>
 
 <script>
